@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MachineLearning package &mdash; MachineLearning 0.0.00 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> MachineLearning
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">MachineLearning package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-MachineLearning.functions">MachineLearning.functions module</a></li>
+<li><a class="reference internal" href="#module-MachineLearning.transformers">MachineLearning.transformers module</a></li>
+<li><a class="reference internal" href="#module-MachineLearning">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MachineLearning</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">MachineLearning package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MachineLearning.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="machinelearning-package">
+<h1>MachineLearning package<a class="headerlink" href="#machinelearning-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-MachineLearning.functions">
+<span id="machinelearning-functions-module"></span><h2>MachineLearning.functions module<a class="headerlink" href="#module-MachineLearning.functions" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.column_ratio">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">column_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#column_ratio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.column_ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Return the ratio of the 2 series of a DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – The dataframe containing the two series to calculate the ratio of.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ratio of the two series in the dataframe.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.cross_val_accuracy">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">cross_val_accuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#cross_val_accuracy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.cross_val_accuracy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the cross-validation accuracy for a given model and dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>sklearn.linear_model.SGDClassifier</em>) – Any model from sklearn that implements the scikit-learn estimator interface.</p></li>
+<li><p><strong>X</strong> (<em>Union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>pandas.DataFrame</em><em>]</em>) – The feature matrix.</p></li>
+<li><p><strong>y</strong> (<em>Union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>pandas.Series</em><em>]</em>) – The target vector (labels).</p></li>
+<li><p><strong>cv</strong> (<em>int</em>) – The number of folds in the cross-validation. Defaults to 3.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The measured accuracy on each fold.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.display_cv_results">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">display_cv_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#display_cv_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.display_cv_results" title="Permalink to this definition"></a></dt>
+<dd><p>This function displays the results of CV search as a nice pandas.DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>search</strong> (<em>sklearn.model_selection.GridSearchCV</em>) – The GridSearchCV object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.display_feature_importances">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">display_feature_importances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#display_feature_importances"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.display_feature_importances" title="Permalink to this definition"></a></dt>
+<dd><p>Display the importances of each feature for a CV search exploration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>search</strong> (<em>sklearn.model_selection.GridSearchCV</em>) – The GridSearchCV object.</p></li>
+<li><p><strong>df_columns</strong> (<em>list</em>) – The list of all features. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.eval_model">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">eval_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#eval_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.eval_model" title="Permalink to this definition"></a></dt>
+<dd><p>This function prints the training error and the validation errors. If the training error is much smaller than the validation errors, it means that the model is overfitting the data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>sklearn.base.BaseEstimator</em>) – The model to evaluate.</p></li>
+<li><p><strong>X</strong> (<em>Union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>pandas.DataFrame</em><em>]</em>) – The feature matrix.</p></li>
+<li><p><strong>y</strong> (<em>Union</em><em>[</em><em>numpy.ndarray</em><em>, </em><em>pandas.Series</em><em>]</em>) – The target vector (labels).</p></li>
+<li><p><strong>cv</strong> (<em>int</em>) – The number of cross-validation subsets (folds). Defaults to 10.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.load_housing_data">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">load_housing_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/MachineLearning/functions.html#load_housing_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.load_housing_data" title="Permalink to this definition"></a></dt>
+<dd><p>Load the California housing dataset from a local file or from a remote URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the California housing dataset.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>urllib.error.URLError</strong> – If the download of the dataset fails.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.load_mnist">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">load_mnist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mnist_784'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'../datasets'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_reload</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Memory</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/MachineLearning/functions.html#load_mnist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.load_mnist" title="Permalink to this definition"></a></dt>
+<dd><p>Load the MNIST dataset from a local file or from the OpenML repository.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – The name of the MNIST dataset to load. Defaults to ‘mnist_784’.</p></li>
+<li><p><strong>path</strong> (<em>str</em>) – The path where to cache the dataset. Defaults to ‘Datasets’.</p></li>
+<li><p><strong>as_frame</strong> (<em>bool</em>) – Whether to return the data as a pandas DataFrame. Defaults to False.</p></li>
+<li><p><strong>force_reload</strong> (<em>bool</em>) – Whether to force a reload of the dataset from the OpenML repository. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary or a memory cache object containing the MNIST dataset.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Union[joblib.Memory, dict]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If an invalid value is provided for the <cite>as_frame</cite> parameter.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.plot_digit">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">plot_digit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#plot_digit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.plot_digit" title="Permalink to this definition"></a></dt>
+<dd><p>Plot as an image the digit from MNIST dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image_data</strong> (<em>np.ndarray</em>) – The digit data.</p></li>
+<li><p><strong>show</strong> (<em>bool</em>) – If true, display the figure. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.plot_preci_recall_tradeoff">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">plot_preci_recall_tradeoff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precisions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recalls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'precision_recall_vs_threshold_plot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_curve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#plot_preci_recall_tradeoff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.plot_preci_recall_tradeoff" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the precision and the recall curves on the same figure, and show their values for a given threshold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>precisions</strong> (<em>np.ndarray</em>) – The precisions.</p></li>
+<li><p><strong>recalls</strong> (<em>np.ndarray</em>) – The recalls.</p></li>
+<li><p><strong>thresholds</strong> (<em>np.ndarray</em>) – The thresholds.</p></li>
+<li><p><strong>threshold</strong> (<em>int</em>) – The threshold to display on the figure. Defaults to 3000.</p></li>
+<li><p><strong>figname</strong> (<em>str</em>) – The name of the figure to save. Defaults to “precision_recall_vs_threshold_plot”.</p></li>
+<li><p><strong>last_curve</strong> (<em>bool</em>) – If False, only plot the precision and recall curves. In order to add more curves to the plot. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.plot_preci_vs_recall">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">plot_preci_vs_recall</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precisions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recalls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'precision_vs_recall_plot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_curve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#plot_preci_vs_recall"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.plot_preci_vs_recall" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the precision as a function of the recall.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>precisions</strong> (<em>np.ndarray</em>) – The precisions.</p></li>
+<li><p><strong>recalls</strong> (<em>np.ndarray</em>) – The recalls.</p></li>
+<li><p><strong>thresholds</strong> (<em>np.ndarray</em>) – The thresholds.</p></li>
+<li><p><strong>threshold</strong> (<em>int</em>) – The threshold to display on the figure. Defaults to 3000.</p></li>
+<li><p><strong>figname</strong> (<em>str</em>) – The name of the figure to save. Defaults to “precision_recall_vs_threshold_plot”.</p></li>
+<li><p><strong>last_curve</strong> (<em>bool</em>) – If False, only plot the precision and recall curves. In order to add more curves to the plot. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.plot_roc_curve">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">plot_roc_curve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fpr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_curve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#plot_roc_curve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.plot_roc_curve" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the ROC curve</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fpr</strong> (<em>np.ndarray</em>) – The false positive rates.</p></li>
+<li><p><strong>tpr</strong> (<em>np.ndarray</em>) – The truth positive rates.</p></li>
+<li><p><strong>thresholds</strong> (<em>np.ndarray</em>) – The thresholds</p></li>
+<li><p><strong>threshold</strong> (<em>int</em>) – The particular threshold to display. Defaults to 3000.</p></li>
+<li><p><strong>last_curve</strong> (<em>bool</em>) – If False, only plot the ROC curve. In order to add more curves to the plot. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.ratio_name">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">ratio_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_transformer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_names_in</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#ratio_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.ratio_name" title="Permalink to this definition"></a></dt>
+<dd><p>Function needed in ratio_pipeline() to be able to use get_feature_names_out().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>function_transformer</strong> (<em>sklearn.preprocessing.FunctionTransformer</em>) – A transformer that implements a function.</p></li>
+<li><p><strong>feature_names_in</strong> (<em>list</em>) – The input features.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of feature names out.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.ratio_pipeline">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">ratio_pipeline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#ratio_pipeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.ratio_pipeline" title="Permalink to this definition"></a></dt>
+<dd><p>One pipeline that does the ratio of 2 dataframe series.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The pipeline for calculating the ratio of 2 dataframe series.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>sklearn.pipeline.Pipeline</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.read_and_split_data">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">read_and_split_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">DataFrame</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/MachineLearning/functions.html#read_and_split_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.read_and_split_data" title="Permalink to this definition"></a></dt>
+<dd><p>Read dataset from a CSV file and split into train and test sets using stratified suffled split.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – The name of the CSV file to load.</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) – The seed of the random generator used to shuffle the data. Defaults to 42.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The train and test datasets.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, pd.DataFrame]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.save_fig">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">save_fig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fig_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">images_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'images'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tight_layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fig_extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#save_fig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.save_fig" title="Permalink to this definition"></a></dt>
+<dd><p>Save the pyplot figure</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fig_id</strong> (<em>str</em>) – The name of the figure.</p></li>
+<li><p><strong>images_path</strong> (<em>str</em>) – The path to the directory in which the figure is saved. Defaults to “Images”.</p></li>
+<li><p><strong>tight_layout</strong> (<em>bool</em>) – Enable tight_layout for the figure. Defaults to True.</p></li>
+<li><p><strong>fig_extension</strong> (<em>str</em>) – The extension of the file that stores the figure. Defaults to “png”.</p></li>
+<li><p><strong>resolution</strong> (<em>int</em>) – The resolution of the figure. Defaults to 300.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.shift_image">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">shift_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(28,</span> <span class="pre">28)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#shift_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.shift_image" title="Permalink to this definition"></a></dt>
+<dd><p>Shifts an image by a specified number of pixels in the x and y directions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> (<em>numpy.ndarray</em>) – The image to shift.</p></li>
+<li><p><strong>dx</strong> (<em>float</em>) – The number of pixels to shift the image in the x direction.</p></li>
+<li><p><strong>dy</strong> (<em>float</em>) – The number of pixels to shift the image in the y direction.</p></li>
+<li><p><strong>size</strong> (<em>tuple</em>) – The dimensions of the image to be reshaped before shifting. Defaults to (28, 28).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The shifted image.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.shuffle_and_split_data">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">shuffle_and_split_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">42</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#shuffle_and_split_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.shuffle_and_split_data" title="Permalink to this definition"></a></dt>
+<dd><p>Shuffle data and split it into a train and a test sets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>Union</em><em>[</em><em>np.ndarray</em><em>, </em><em>pd.DataFrame</em><em>]</em>) – The dataset to shuffle and split.</p></li>
+<li><p><strong>test_ratio</strong> (<em>float</em>) – The ratio of test data over all data. Range from 0 to 1. Usually chosen around 0.2.</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) – the seed of the random generator used to shuffle the data. Defaults to 42.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The train and test datasets.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, pd.DataFrame]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MachineLearning.functions.split_data_with_id_hash">
+<span class="sig-prename descclassname"><span class="pre">MachineLearning.functions.</span></span><span class="sig-name descname"><span class="pre">split_data_with_id_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_column</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/functions.html#split_data_with_id_hash"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.functions.split_data_with_id_hash" title="Permalink to this definition"></a></dt>
+<dd><p>Split dataset using the IDs from a column of the DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – The dataset to splot</p></li>
+<li><p><strong>test_ratio</strong> (<em>float</em>) – The ratio of test data over all data. Range from 0 to 1. Usually chosen around 0.2.</p></li>
+<li><p><strong>id_column</strong> (<em>str</em>) – The name of the column to use as IDs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The train and test datasets.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, pd.DataFrame]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-MachineLearning.transformers">
+<span id="machinelearning-transformers-module"></span><h2>MachineLearning.transformers module<a class="headerlink" href="#module-MachineLearning.transformers" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="MachineLearning.transformers.CombinedAttributesAdder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MachineLearning.transformers.</span></span><span class="sig-name descname"><span class="pre">CombinedAttributesAdder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">add_bedrooms_per_room</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#CombinedAttributesAdder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.CombinedAttributesAdder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseEstimator</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TransformerMixin</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MachineLearning.transformers.CombinedAttributesAdder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#CombinedAttributesAdder.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.CombinedAttributesAdder.fit" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MachineLearning.transformers.CombinedAttributesAdder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#CombinedAttributesAdder.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.CombinedAttributesAdder.transform" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MachineLearning.transformers.DataFrameSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MachineLearning.transformers.</span></span><span class="sig-name descname"><span class="pre">DataFrameSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_names</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#DataFrameSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.DataFrameSelector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseEstimator</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TransformerMixin</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MachineLearning.transformers.DataFrameSelector.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#DataFrameSelector.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.DataFrameSelector.fit" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MachineLearning.transformers.DataFrameSelector.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MachineLearning/transformers.html#DataFrameSelector.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#MachineLearning.transformers.DataFrameSelector.transform" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-MachineLearning">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-MachineLearning" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Thomas Etourneau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

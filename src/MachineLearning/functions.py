@@ -21,7 +21,7 @@ from typing import Tuple, Union
 
 
 ########## Reading data ##########
-def load_housing_data() -> pd.DataFrame:
+def load_housing_data():
     """
     Load the California housing dataset from a local file or from a remote URL.
 
@@ -41,7 +41,7 @@ def load_housing_data() -> pd.DataFrame:
     return pd.read_csv(Path("datasets/housing.csv"))
 
 
-def load_mnist(name='mnist_784', path='../datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
+def load_mnist(name='mnist_784', path='../datasets', as_frame=False, force_reload=False):
     """
     Load the MNIST dataset from a local file or from the OpenML repository.
 
@@ -77,7 +77,7 @@ def load_mnist(name='mnist_784', path='../datasets', as_frame=False, force_reloa
 
 
 ########## Splitting data ##########
-def read_and_split_data(filename, random_state=42) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def read_and_split_data(filename, random_state=42):
     """
     Read dataset from a CSV file and split into train and test sets using stratified suffled split.
 
@@ -128,9 +128,9 @@ def shuffle_and_split_data(data, test_ratio, random_state=42):
 def split_data_with_id_hash(data, test_ratio, id_column):
     """
     Split dataset using the IDs from a column of the DataFrame.
-    
+
     :param data: The dataset to splot
-    : type data: pd.DataFrame
+    :type data: pd.DataFrame
     :param test_ratio: The ratio of test data over all data. Range from 0 to 1. Usually chosen around 0.2.
     :type test_ratio: float
     :param id_column: The name of the column to use as IDs.
@@ -304,6 +304,7 @@ def cross_val_accuracy(model, X, y, cv=3):
 def save_fig(fig_id, images_path="images", tight_layout=True, fig_extension="png", resolution=300):
     """
     Save the pyplot figure
+
     :param fig_id: The name of the figure.
     :type fig_id: str
     :param images_path: The path to the directory in which the figure is saved. Defaults to "Images".
@@ -327,6 +328,7 @@ def save_fig(fig_id, images_path="images", tight_layout=True, fig_extension="png
 def plot_digit(image_data, show=True):
     """
     Plot as an image the digit from MNIST dataset.
+
     :param image_data: The digit data.
     :type image_data: np.ndarray
     :param show: If true, display the figure. Defaults to True.
@@ -342,6 +344,7 @@ def plot_digit(image_data, show=True):
 def plot_preci_recall_tradeoff(precisions, recalls, thresholds, threshold=3000, figname="precision_recall_vs_threshold_plot", last_curve=True):
     """
     Plot the precision and the recall curves on the same figure, and show their values for a given threshold.
+
     :param precisions: The precisions.
     :type precisions: np.ndarray
     :param recalls: The recalls.
@@ -375,6 +378,7 @@ def plot_preci_recall_tradeoff(precisions, recalls, thresholds, threshold=3000, 
 def plot_preci_vs_recall(precisions, recalls, thresholds, threshold=3000, figname="precision_vs_recall_plot", last_curve=True):
     """
     Plot the precision as a function of the recall.
+
     :param precisions: The precisions.
     :type precisions: np.ndarray
     :param recalls: The recalls.
@@ -415,6 +419,7 @@ def plot_preci_vs_recall(precisions, recalls, thresholds, threshold=3000, fignam
 def plot_roc_curve(fpr, tpr, thresholds, threshold=3000, last_curve=True):
     """
     Plot the ROC curve
+
     :param fpr: The false positive rates.
     :type fpr: np.ndarray
     :param tpr: The truth positive rates.
