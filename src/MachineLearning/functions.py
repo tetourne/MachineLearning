@@ -41,7 +41,7 @@ def load_housing_data() -> pd.DataFrame:
     return pd.read_csv(Path("datasets/housing.csv"))
 
 
-def load_mnist(name='mnist_784', path='Datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
+def load_mnist(name='mnist_784', path='datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
     """
     Load the MNIST dataset from a local file or from the OpenML repository.
 
@@ -59,7 +59,11 @@ def load_mnist(name='mnist_784', path='Datasets', as_frame=False, force_reload=F
     :raises ValueError: If an invalid value is provided for the `as_frame` parameter.
 
     """
-    full_path = path + '/' + name + '.pkl'
+    path = Path() / path
+    if not path.is_dir():
+        path.mkdir(parents=True, exist_ok=True)
+    filename = name + '.pkl'
+    full_path = path / filename
     if force_reload:
         mnist = fetch_openml(name, as_frame=as_frame)
         joblib.dump(mnist, full_path)
@@ -311,7 +315,7 @@ def save_fig(fig_id, images_path="images", tight_layout=True, fig_extension="png
     :param resolution: The resolution of the figure. Defaults to 300.
     :type resolution: int
     """
-    path = Path('.') / images_path
+    path = Path() / images_path
     if not path.is_dir():
         path.mkdir(parents=True, exist_ok=True)
     path = path / f"{fig_id}.{fig_extension}"

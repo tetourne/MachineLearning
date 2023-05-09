@@ -1,6 +1,6 @@
 from sklearn.base import BaseEstimator, TransformerMixin
 import numpy as np
-import functions as fn
+from MachineLearning import functions as fn
 
 
 ##########

@@ -26,7 +26,7 @@ do_rnd_search = False
 
 
 ########## Read and split data ##########
-filename = "../handson-ml/datasets/housing/housing.csv"
+filename = "/home/thomas/Documents/Python/Tutorials/Hands_on_ML/handson-ml/datasets/housing/housing.csv"
 housing, test_set = fn.read_and_split_data(filename)
 
 ########## Visualize data ##########
@@ -227,7 +227,7 @@ final_pipeline = Pipeline([
     ("preprocessing", preprocessing),
     ("random_forest", final_model),
     ])
-model_path = Path('.') / "models"
+model_path = Path(__file__).parents[0] / "models"
 if not model_path.is_dir():
     model_path.mkdir(parents=True, exist_ok=True)
 

@@ -1,6 +1,7 @@
 from MachineLearning import functions as fn
 import numpy as np
 import joblib
+from pathlib import Path
 from sklearn.linear_model import SGDClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -108,10 +109,15 @@ if do_grid_search:
     print("Doing GridSearchCV with:")
     print(param_grid)
     grid_search.fit(X_train, y_train)
-    joblib.dump(grid_search, "Pkls/grid_search_kneighbors_clf.pkl")
+    # Save search
+    pkl_path = Path(__file__).parents[0] / "pkls"
+    if not pkl_path.is_dir():
+        pkl_path.mkdir(parents=True, exist_ok=True)
+    joblib.dump(grid_search, pkl_path / "grid_search_kneighbors_clf.pkl")
 if not do_grid_search:
+    pkl_path = Path(__file__).parents[0] / "pkls"
     print("Loading GridSearchCV:")
-    grid_search = joblib.load("Pkls/grid_search_kneighbors_clf.pkl")
+    grid_search = joblib.load(pkl_path / "grid_search_kneighbors_clf.pkl")
 grid_search.best_params_
 grid_search.best_estimator_
 fn.display_cv_results(grid_search)
