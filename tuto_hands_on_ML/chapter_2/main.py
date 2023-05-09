@@ -1,9 +1,10 @@
-import functions as fn
-import transformers as tr
+from MachineLearning import functions as fn
+from MachineLearning import transformers as tr
 import pandas as pd
 import numpy as np
 import scipy as sp
 import joblib
+from pathlib import Path
 from matplotlib import pyplot as plt
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline, FeatureUnion, make_pipeline
@@ -226,7 +227,11 @@ final_pipeline = Pipeline([
     ("preprocessing", preprocessing),
     ("random_forest", final_model),
     ])
-joblib.dump(final_pipeline, "Models/final_pipeline.pkl")
+model_path = Path('.') / "models"
+if not model_path.is_dir():
+    model_path.mkdir(parents=True, exist_ok=True)
+
+joblib.dump(final_pipeline, model_path / "final_pipeline.pkl")
 
 ########## Evaluate the model on the test set ##########
 X_test = test_set.drop("median_house_value", axis=1)
@@ -257,6 +262,6 @@ print(np.sqrt(sp.stats.t.interval(confidence, len(squared_errors) - 1,
 
 
 ########## Reload the model and make prediction on new data ##########
-final_pipeline_reloaded = joblib.load("Models/final_pipeline.pkl")
+final_pipeline_reloaded = joblib.load(model_path / "final_pipeline.pkl")
 new_data = housing.iloc[:5]  # pretend these are new districts
 predictions = final_pipeline_reloaded.predict(new_data)

@@ -1,6 +1,4 @@
-import sys
-sys.path.append('/home/thomas/Documents/Python/Libraries/')
-import functions as fn
+from MachineLearning import functions as fn
 import numpy as np
 import joblib
 from sklearn.linear_model import SGDClassifier
@@ -11,7 +9,7 @@ from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_
 
 
 random_forest = False
-do_grid_search = False
+do_grid_search = True
 do_plot = False
 
 ########## Load data ##########

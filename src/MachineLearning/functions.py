@@ -31,14 +31,14 @@ def load_housing_data() -> pd.DataFrame:
     :raises urllib.error.URLError: If the download of the dataset fails.
 
     """
-    tarball_path = Path("Datasets/housing.csv")
+    tarball_path = Path("datasets/housing.csv")
     if not tarball_path.is_file():
-        Path("Datasets").mkdir(parents=True, exist_ok=True)
+        Path("datasets").mkdir(parents=True, exist_ok=True)
         url = "https://github.com/ageron/handson-ml/tree/master/datasets/housing/housing.csv"
         urllib.request.urlretrieve(url, tarball_path)
         # with tarfile.open(tarball_path) as housing_tarball:
         #     housing_tarball.extractall(path="Datasets")
-    return pd.read_csv(Path("Datasets/housing.csv"))
+    return pd.read_csv(Path("datasets/housing.csv"))
 
 
 def load_mnist(name='mnist_784', path='Datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
@@ -297,7 +297,7 @@ def cross_val_accuracy(model, X, y, cv=3):
 
 
 ########## Plotting ##########
-def save_fig(fig_id, images_path="Images", tight_layout=True, fig_extension="png", resolution=300):
+def save_fig(fig_id, images_path="images", tight_layout=True, fig_extension="png", resolution=300):
     """
     Save the pyplot figure
     :param fig_id: The name of the figure.
@@ -311,7 +311,10 @@ def save_fig(fig_id, images_path="Images", tight_layout=True, fig_extension="png
     :param resolution: The resolution of the figure. Defaults to 300.
     :type resolution: int
     """
-    path = Path() / images_path / f"{fig_id}.{fig_extension}"
+    path = Path('.') / images_path
+    if not path.is_dir():
+        path.mkdir(parents=True, exist_ok=True)
+    path = path / f"{fig_id}.{fig_extension}"
     if tight_layout:
         plt.tight_layout()
     plt.savefig(path, format=fig_extension, dpi=resolution)
