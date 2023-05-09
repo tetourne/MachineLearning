@@ -41,7 +41,7 @@ def load_housing_data() -> pd.DataFrame:
     return pd.read_csv(Path("datasets/housing.csv"))
 
 
-def load_mnist(name='mnist_784', path='datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
+def load_mnist(name='mnist_784', path='../datasets', as_frame=False, force_reload=False) -> Union[joblib.Memory, dict]:
     """
     Load the MNIST dataset from a local file or from the OpenML repository.
 
