@@ -17,7 +17,55 @@ import urllib.request
 import joblib
 import os
 import sys
+import logging
 from typing import Tuple, Union
+
+
+########## Logger ##########
+def my_logger(filename, logger_level=logging.DEBUG, console_level=logging.DEBUG, logfile_level=logging.INFO, logs_format='%(asctime)s - %(levelname)s - %(message)s'):
+    """
+    Create a logger object with a file handler and a console handler.
+
+    :param filename: The name of the log file.
+    :type filename: str
+    :param logger_level: The level of the logger. Default is logging.DEBUG.
+    :type logger_level: int
+    :param console_level: The level of the console handler. Default is logging.DEBUG.
+    :type console_level: int
+    :param logfile_level: The level of the file handler. Default is logging.INFO.
+    :type logfile_level: int
+    :param logs_format: The format of the log messages. Default is '%(asctime)s - %(levelname)s - %(message)s'.
+    :type logs_format: str
+    :return: A logger object with a file handler and a console handler.
+    :rtype: logging.Logger
+    """
+    # Create a logger object
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logger_level)
+
+    # Create a file handler and set the level to DEBUG
+    file_handler = logging.FileHandler(filename)
+    file_handler.setLevel(logfile_level)
+
+    # Create a console handler and set the level to INFO
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(console_level)
+
+    # Create a formatter and add it to the handlers
+    formatter = logging.Formatter(logs_format)
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+
+    # Add the handlers to the logger
+    if len(logger.handlers) < 1:
+        logger.addHandler(file_handler)
+    if len(logger.handlers) < 2:
+        logger.addHandler(console_handler)
+
+    return logger
+
+# Import the logger from the main module
+logger = logging.getLogger(__name__)
 
 
 ########## Reading data ##########
@@ -221,19 +269,21 @@ def eval_model(model, X, y, cv=10):
     model.fit(X, y)
     prediction = model.predict(X)
     rmse = mean_squared_error(y, prediction, squared=False)
-    print("Training error is {}".format(rmse))
+    logger.info("Training error is {}".format(rmse))
     # Validation error
     rmses = -cross_val_score(model, X, y, scoring='neg_root_mean_squared_error', cv=cv)
-    print("Validation errors :")
-    print(pd.Series(rmses).describe())
+    logger.info("Validation errors :")
+    logger.info(pd.Series(rmses).describe())
 
 
-def display_cv_results(search):
+def get_cv_results(search):
     """
-    This function displays the results of CV search as a nice pandas.DataFrame.
+    This function returns the results of CV search as a nice pandas.DataFrame.
 
     :param search: The GridSearchCV object.
     :type search: sklearn.model_selection.GridSearchCV
+    :return: The sorted dataframe containing CV results
+    :rtype: pd.DataFrame
     """
     cv_res = pd.DataFrame(search.cv_results_)
     param_list = [item for item in cv_res.columns if "param_" in item]
@@ -244,10 +294,10 @@ def display_cv_results(search):
     score_list = [item[:-6] for item in score_list]
     cv_res.columns = param_list + score_list
     cv_res[score_list] = -cv_res[score_list]
-    # print("\nResults of CV search:")
-    # print(cv_res)
-    print("\nSorted results of CV search:")
-    print(cv_res.sort_values("mean_test"))
+    # logger.info("\nResults of CV search:")
+    # logger.info(cv_res)
+    # logger.info("\nSorted results of CV search:")
+    return cv_res.sort_values("mean_test")
 
 
 def display_feature_importances(search, df_columns=None):
@@ -265,7 +315,7 @@ def display_feature_importances(search, df_columns=None):
     else:
         res = sorted(zip(feature_importances, df_columns), reverse=True)
     for r in res:
-        print(r)
+        logger.info(r)
     
 
 def cross_val_accuracy(model, X, y, cv=3):
@@ -280,7 +330,6 @@ def cross_val_accuracy(model, X, y, cv=3):
     :type y: Union[numpy.ndarray, pandas.Series]
     :param cv: The number of folds in the cross-validation. Defaults to 3.
     :type cv: int
-
     :return: The measured accuracy on each fold.
     :rtype: np.ndarray
     """
