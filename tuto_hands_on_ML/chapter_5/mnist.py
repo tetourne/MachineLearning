@@ -165,6 +165,7 @@ final_model = Pipeline([
     ('standardscaler', StandardScaler()),
     ('svc', SVC(C=1, gamma=1, kernel='poly'))
 ])
+logger.info("Final model is:\n{}".format(final_model))
 
 # Read again full data (used subset to do grid_search)
 X_train, X_test = X[:train_length], X[train_length:]

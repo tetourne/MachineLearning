@@ -162,7 +162,7 @@ def read_and_split_data(filename, random_state=42):
 
 def shuffle_and_split_data(data, test_ratio, random_state=42):
     """
-    Shuffle data and split it into a train and a test sets.
+    Shuffle data and split it into a train and a test sets. (Not stratified)
 
     :param data: The dataset to shuffle and split.
     :type data: Union[np.ndarray, pd.DataFrame]
