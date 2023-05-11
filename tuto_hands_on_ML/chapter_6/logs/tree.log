@@ -1,0 +1,41 @@
+2023-05-11 16:55:50,633 - INFO - Doing RandomizedSearchCV with:
+2023-05-11 16:55:50,634 - INFO - {'criterion': ['gini', 'entropy', 'log_loss'], 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f96522d7550>, 'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f9650e89950>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f9650e8a6d0>, 'max_leaf_nodes': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f9650e8b290>}
+2023-05-11 17:07:43,346 - INFO - {'criterion': 'entropy', 'max_depth': 22, 'max_leaf_nodes': 32, 'min_samples_leaf': 58, 'min_samples_split': 46}
+2023-05-11 17:07:43,347 - INFO - 
+DecisionTreeClassifier(criterion='entropy', max_depth=22, max_leaf_nodes=32,
+                       min_samples_leaf=58, min_samples_split=46,
+                       random_state=42)
+2023-05-11 17:07:43,360 - INFO - 
+     criterion max_depth max_leaf_nodes min_samples_leaf min_samples_split  mean_test  std_test
+3548   entropy        22             32               58                46  -0.861375 -0.008500
+4745   entropy        10             33               58                 7  -0.861375 -0.008500
+2135  log_loss        47             75               52                 8  -0.861375 -0.009661
+1801   entropy        18             85               52                46  -0.861375 -0.009661
+1567   entropy        27             74               52                42  -0.861375 -0.009661
+...        ...       ...            ...              ...               ...        ...       ...
+4676  log_loss        18              1               63                 3        NaN       NaN
+4789  log_loss        35              1               29                 9        NaN       NaN
+4934   entropy        46              1               96                25        NaN       NaN
+4967  log_loss         4             20               54                 1        NaN       NaN
+4982      gini        21             21               72                 1        NaN       NaN
+
+[5000 rows x 7 columns]
+2023-05-11 17:07:43,394 - INFO - 
+Final model is:
+DecisionTreeClassifier(criterion='entropy', max_depth=22, max_leaf_nodes=32,
+                       min_samples_leaf=58, min_samples_split=46,
+                       random_state=42)
+2023-05-11 17:07:43,394 - INFO - Training final model on 5 cross validation folds
+2023-05-11 17:07:43,556 - INFO - Accuracies: [0.849375 0.875625 0.863125 0.860625 0.858125]
+2023-05-11 17:07:43,716 - INFO - Confusion matrix:
+2023-05-11 17:07:43,716 - INFO - 
+[[3442  545]
+ [ 564 3449]]
+2023-05-11 17:07:43,723 - INFO - Precision: 0.8613782506010639
+2023-05-11 17:07:43,729 - INFO - Recall: 0.8613812545895017
+2023-05-11 17:07:43,736 - INFO - F1 score: 0.8613748938651531
+2023-05-11 17:07:43,736 - INFO - Fitting final model on the full training set...
+2023-05-11 17:07:43,773 - INFO - Testing on the test set:
+2023-05-11 17:07:43,777 - INFO - Precision: 0.8653961174211117
+2023-05-11 17:07:43,781 - INFO - Recall: 0.8647821481830429
+2023-05-11 17:07:43,784 - INFO - F1 score: 0.8648940769563337

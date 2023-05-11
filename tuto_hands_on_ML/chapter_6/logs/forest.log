@@ -1,0 +1,18 @@
+2023-05-11 17:31:00,114 - INFO - Generating moons data
+2023-05-11 17:31:00,121 - INFO - Generating 1000 subsets containing 100 instances each
+2023-05-11 17:31:00,402 - INFO - 
+Fitting best model:
+DecisionTreeClassifier(criterion='entropy', max_depth=22, max_leaf_nodes=32,
+                       min_samples_leaf=58, min_samples_split=46,
+                       random_state=42) 
+ on each subsets
+2023-05-11 17:31:02,588 - INFO - Averaged accuracy is: 0.5002340000000001
+2023-05-11 17:31:02,886 - INFO - Accuracy from the forest: 0.5065
+2023-05-11 17:32:36,323 - INFO - Generating moons data
+2023-05-11 17:32:36,329 - INFO - Generating 1000 subsets containing 100 instances each
+2023-05-11 17:32:36,617 - INFO - 
+Fitting best model:
+DecisionTreeClassifier(max_depth=6, max_leaf_nodes=17, random_state=42) 
+ on each subsets
+2023-05-11 17:32:39,405 - INFO - Averaged accuracy is: 0.8056605
+2023-05-11 17:32:39,842 - INFO - Accuracy from the forest: 0.873
