@@ -1,0 +1,37 @@
+2023-05-11 10:09:07,019 - INFO - Reading data from /home/thomas/Documents/Python/Tutorials/Hands_on_ML/handson-ml/datasets/housing/housing.csv
+2023-05-11 10:09:07,124 - INFO - Cleaning dataset...
+2023-05-11 10:09:07,265 - INFO - Loading RandomizedSearchCV:
+2023-05-11 10:10:03,982 - INFO - Reading data from /home/thomas/Documents/Python/Tutorials/Hands_on_ML/handson-ml/datasets/housing/housing.csv
+2023-05-11 10:10:04,050 - INFO - Cleaning dataset...
+2023-05-11 10:10:04,184 - INFO - Loading RandomizedSearchCV:
+2023-05-11 10:10:04,192 - INFO - {'C': 225742.3924305307, 'gamma': 0.20342827646588113, 'kernel': 'rbf'}
+2023-05-11 10:10:04,193 - INFO - SVR(C=225742.3924305307, gamma=0.20342827646588113)
+2023-05-11 10:10:04,201 - INFO - 
+                C     gamma kernel     mean_test     std_test
+51  225742.392431  0.203428    rbf  63851.263836 -2248.971077
+23  224684.430436  0.208027    rbf  63851.529845 -2258.633775
+8   221696.897184  0.209903    rbf  63853.529568 -2265.448491
+32  212373.803875  0.217078    rbf  63870.223350 -2293.523415
+13  179869.512863  0.205694    rbf  63997.473810 -2393.427386
+..            ...       ...    ...           ...          ...
+49  110167.650698  0.043157    rbf  66632.039601 -2599.477602
+14  336965.827545   0.01858    rbf  66636.124712 -2848.229929
+5   108233.797718  0.387964    rbf  67023.770363 -2052.458335
+72  213936.197751  0.014755    rbf  68065.896809 -2892.296110
+85  371025.744737  0.006635    rbf  69946.421427 -2842.791709
+
+[100 rows x 5 columns]
+2023-05-11 10:10:04,227 - INFO - Testing best model:
+2023-05-11 10:10:04,227 - INFO - SVR(C=225742, gamma=0.203428)
+2023-05-11 10:12:17,902 - INFO - Training error is 47140.45995762271
+2023-05-11 10:17:39,326 - INFO - Validation errors :
+2023-05-11 10:17:39,329 - INFO - 
+count        5.000000
+mean     54363.392001
+std        718.209966
+min      53226.440742
+25%      54105.995664
+50%      54719.769236
+75%      54743.281514
+max      55021.472851
+dtype: float64

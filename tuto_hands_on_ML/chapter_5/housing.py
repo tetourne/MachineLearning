@@ -17,13 +17,23 @@ from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 do_rnd_search = False
 
 
+########## Configure logger ##########
+logs_path = Path(__file__).parents[0] / "logs"
+if not logs_path.is_dir():
+    logs_path.mkdir(parents=True, exist_ok=True)
+logs_file = logs_path / 'housing.log'
+logger = fn.my_logger(logs_file)
+
+
 ########## Read and split data ##########
 filename = "/home/thomas/Documents/Python/Tutorials/Hands_on_ML/handson-ml/datasets/housing/housing.csv"
+logger.info("Reading data from {}".format(filename))
 housing, test_set = fn.read_and_split_data(filename)
 
 
 ########## Clean Data ##########
 # Get instances and labels
+logger.info("Cleaning dataset...")
 housing_labels = housing["median_house_value"].copy()
 housing.drop("median_house_value", axis=1, inplace=True)
 
@@ -78,8 +88,8 @@ rnd_search = RandomizedSearchCV(svm_reg, param_distributions=param_distrib,
                                 scoring='neg_root_mean_squared_error', random_state=42,
                                 verbose=3)
 if do_rnd_search:
-    print("Doing RandomizedSearchCV with:")
-    print(param_distrib)
+    logger.info("Doing RandomizedSearchCV with:")
+    logger.info(param_distrib)
     rnd_search.fit(housing_prepared[:2000], housing_labels[:2000])
     # Save search
     pkl_path = Path(__file__).parents[0] / "pkls"
@@ -88,16 +98,19 @@ if do_rnd_search:
     joblib.dump(rnd_search, pkl_path / "rnd_search_{}.pkl".format(mod_name))
 else:
     pkl_path = Path(__file__).parents[0] / "pkls"
-    print("Loading RandomizedSearchCV:")
+    logger.info("Loading RandomizedSearchCV:")
     rnd_search = joblib.load(pkl_path / "rnd_search_{}.pkl".format(mod_name))
     
-print(rnd_search.best_params_)
-print(rnd_search.best_estimator_)
+logger.info(rnd_search.best_params_)
+logger.info(rnd_search.best_estimator_)
 cv_res = fn.get_cv_results(rnd_search)
-print(cv_res)
+logger.info(cv_res)
 # fn.display_feature_importances(rnd_search, df_housing_prepared.columns)
 
 
 ########## Test best model ##########
 final_model = SVR(kernel='rbf', C=225742, gamma=0.203428)
+logger.info("Testing best model:")
+logger.info(final_model)
 fn.eval_model(final_model, housing_prepared, housing_labels, cv=5)
+

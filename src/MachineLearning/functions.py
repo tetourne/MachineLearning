@@ -52,7 +52,15 @@ def my_logger(filename, logger_level=logging.DEBUG, console_level=logging.DEBUG,
     console_handler.setLevel(console_level)
 
     # Create a formatter and add it to the handlers
-    formatter = logging.Formatter(logs_format)
+    class MultiLineFormatter(logging.Formatter):
+        def format(self, record):
+            # Add a newline character before the message if the message contains multiple lines
+            if '\n' in record.getMessage():
+                record.msg = '\n' + record.getMessage()
+            return super().format(record)
+
+    # Create a formatter and add it to the handlers
+    formatter = MultiLineFormatter(logs_format)
     file_handler.setFormatter(formatter)
     console_handler.setFormatter(formatter)
 
