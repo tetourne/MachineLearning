@@ -1,0 +1,2637 @@
+2023-05-12 17:26:04,054 - INFO - Loading MNIST dataset
+2023-05-12 17:42:36,371 - INFO - Loading MNIST dataset
+2023-05-12 17:43:47,218 - INFO - Loading MNIST dataset
+2023-05-12 17:43:48,291 - INFO - Doing RandomizedSearchCV for model rnd_clf with:
+2023-05-12 17:43:48,291 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9f7db68d0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9f7db6e90>, 'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9f6e27d50>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9f6e51110>, 'max_leaf_nodes': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9f6e52590>}
+2023-05-12 17:45:49,334 - INFO - Loading MNIST dataset
+2023-05-12 17:45:50,174 - INFO - Doing RandomizedSearchCV for model rnd_clf with:
+2023-05-12 17:45:50,174 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1abd9e490>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1ad092ad0>, 'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1abb15bd0>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1abb16290>, 'max_leaf_nodes': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1abb16950>}
+2023-05-12 17:49:11,848 - INFO - Loading MNIST dataset
+2023-05-12 17:49:13,047 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 17:49:13,047 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1a9cbdb10>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1abad5990>, 'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1a84f1dd0>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1a84f29d0>, 'max_leaf_nodes': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fa1a84f20d0>}
+2023-05-12 17:50:41,909 - INFO - {'max_depth': 8, 'max_leaf_nodes': 61, 'min_samples_leaf': 21, 'min_samples_split': 83, 'n_estimators': 224}
+2023-05-12 17:50:41,910 - INFO - 
+RandomForestClassifier(max_depth=8, max_leaf_nodes=61, min_samples_leaf=21,
+                       min_samples_split=83, n_estimators=224, n_jobs=-1)
+2023-05-12 17:50:41,931 - INFO - 
+  max_depth max_leaf_nodes min_samples_leaf  ... n_estimators mean_test  std_test
+1         8             61               21  ...          224 -0.894501 -0.005364
+3        22             53                2  ...          501 -0.891801 -0.006731
+8        47             62               51  ...          253 -0.884401 -0.007563
+6        44             89               49  ...           68 -0.881301 -0.005908
+7        42             92               60  ...          792 -0.880901 -0.006429
+4        30             38                2  ...          965 -0.879701 -0.005864
+2        11             75               88  ...          140 -0.857401 -0.006794
+0        39             52               93  ...          116 -0.857101 -0.008993
+5        21             33               76  ...           31 -0.847202 -0.011883
+9         3             51                7  ...          850 -0.762600 -0.002403
+
+[10 rows x 7 columns]
+2023-05-12 17:55:58,989 - INFO - Loading MNIST dataset
+2023-05-12 17:55:59,860 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 17:55:59,860 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadb5481890>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadb4ec2ad0>, 'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadaff7d2d0>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadaff7d990>, 'max_leaf_nodes': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadaff7e050>}
+2023-05-12 18:01:02,834 - INFO - {'max_depth': 13, 'max_leaf_nodes': 99, 'min_samples_leaf': 2, 'min_samples_split': 20, 'n_estimators': 141}
+2023-05-12 18:01:02,834 - INFO - 
+RandomForestClassifier(max_depth=13, max_leaf_nodes=99, min_samples_leaf=2,
+                       min_samples_split=20, n_estimators=141, n_jobs=-1)
+2023-05-12 18:01:02,843 - INFO - 
+   max_depth max_leaf_nodes min_samples_leaf min_samples_split n_estimators  mean_test  std_test
+9         13             99                2                20          141  -0.910201 -0.005268
+45        20             82                6                16          398  -0.908001 -0.004548
+15        19             81               14                23          301  -0.904501 -0.004479
+1         25             92               23                11          137  -0.901700 -0.004898
+20        28             72               11                17          441  -0.901700 -0.005248
+31        36             80               22                28          115  -0.900001 -0.006938
+4         16             67               22                44          394  -0.899101 -0.005950
+35         7             79                8                27          186  -0.899001 -0.007022
+43         8             64               11                17          304  -0.898801 -0.004644
+44        28             78               34                 6          444  -0.897201 -0.005628
+13        33             72               18                26           93  -0.896700 -0.003928
+37        19             68               32                32          282  -0.896401 -0.006382
+14        38             83               36                14          400  -0.895601 -0.006369
+11        18             90               36                40          437  -0.895200 -0.005453
+40        32             63               23                37          273  -0.894800 -0.004779
+7          7             60                7                21          378  -0.894000 -0.004620
+5         31             68               42                28          237  -0.892500 -0.004100
+28        30             51               13                32          280  -0.889101 -0.007097
+16        25             89               45                18          416  -0.887901 -0.009050
+10        11             53                8                47           84  -0.887701 -0.006482
+24        28             46               35                44          409  -0.886101 -0.007306
+3         34             47                2                21          210  -0.886101 -0.005627
+36        37             60               42                44          201  -0.885401 -0.004523
+38        16             48                2                 3          162  -0.885101 -0.008285
+25        26             44                1                35          150  -0.884801 -0.008287
+48        37             49               39                18          409  -0.884601 -0.007337
+21        39             44               33                 5          280  -0.883501 -0.007211
+30        19             52               29                36           62  -0.882301 -0.005226
+39        21             68               49                 2          179  -0.881800 -0.005732
+33        24             39               11                28          280  -0.881401 -0.008373
+42        30             41                6                32          296  -0.880201 -0.006038
+23        38             42               48                23          111  -0.877500 -0.006852
+32        10             37               28                44           93  -0.872900 -0.006119
+17        28             35               25                45           90  -0.867001 -0.009154
+27        18             36                9                15           64  -0.865801 -0.008615
+46         7             29               36                19          395  -0.865001 -0.005118
+47         7             28               20                32          248  -0.862801 -0.011881
+0         33             24               43                 8          238  -0.850801 -0.008615
+6         20             24               47                44          104  -0.847401 -0.015679
+49         5             20               28                25          483  -0.841800 -0.006233
+22        32             16                9                 8          317  -0.821901 -0.008423
+12         6             15               42                 4          359  -0.820001 -0.005871
+29        36             13               30                37          456  -0.809101 -0.006201
+8         22             13               25                14          291  -0.806800 -0.004570
+2         28             12               22                 2          393  -0.797200 -0.005272
+26        18             12                1                 5          267  -0.795801 -0.008063
+34        37             10               27                13          282  -0.782801 -0.005954
+41        37             10               19                 2          102  -0.773900 -0.005867
+18        33             24               45                 1          394        NaN       NaN
+19        11             18               24                 1          185        NaN       NaN
+2023-05-12 18:04:58,717 - INFO - Loading MNIST dataset
+2023-05-12 18:04:59,551 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:04:59,551 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fad7bb8add0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fadb4217b10>}
+2023-05-12 18:07:43,736 - INFO - {'max_depth': 34, 'n_estimators': 343}
+2023-05-12 18:07:43,745 - INFO - RandomForestClassifier(max_depth=34, n_estimators=343, n_jobs=-1)
+2023-05-12 18:07:43,753 - INFO - 
+   max_depth n_estimators  mean_test  std_test
+8         34          343  -0.947500 -0.004119
+5         28          180  -0.946700 -0.003433
+6         26          358  -0.946600 -0.004453
+12        26          302  -0.946400 -0.004383
+0         33          320  -0.946300 -0.003362
+10        25          210  -0.946100 -0.003922
+15        32          237  -0.946000 -0.001999
+3         23          264  -0.945800 -0.003565
+11        16          363  -0.945600 -0.003464
+16        20          320  -0.945500 -0.003496
+2         25          152  -0.945300 -0.001476
+19        13          216  -0.944500 -0.004301
+13        29           98  -0.943900 -0.004467
+4         15          137  -0.941900 -0.002273
+14        31          108  -0.941500 -0.001528
+1         12          238  -0.940600 -0.003181
+18        11           70  -0.935700 -0.004438
+17         7          356  -0.907200 -0.003707
+7          6          393  -0.889601 -0.007605
+9          6          241  -0.888101 -0.006264
+2023-05-12 18:07:43,781 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:10:12,046 - INFO - Loading MNIST dataset
+2023-05-12 18:10:12,860 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:10:12,861 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f6ec43a5dd0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f6ec9137f90>}
+2023-05-12 18:18:41,185 - INFO - {'max_depth': 81, 'n_estimators': 750}
+2023-05-12 18:18:41,185 - INFO - RandomForestClassifier(max_depth=81, n_estimators=750, n_jobs=-1)
+2023-05-12 18:18:41,194 - INFO - 
+   max_depth n_estimators  mean_test  std_test
+2         81          750    -0.9485 -0.002898
+18        69          832    -0.9482 -0.002475
+0         61          910    -0.9480 -0.002988
+17        51          525    -0.9479 -0.004594
+3         30          664    -0.9479 -0.003795
+16        68          560    -0.9477 -0.003902
+12        69          326    -0.9476 -0.003746
+15        98          610    -0.9475 -0.003605
+20        71          612    -0.9473 -0.003609
+5         84          508    -0.9471 -0.005394
+10        39          855    -0.9470 -0.003322
+13        42          509    -0.9470 -0.004214
+21        64          293    -0.9470 -0.003101
+19        71          736    -0.9467 -0.003256
+24        60          696    -0.9467 -0.003565
+8         31          358    -0.9467 -0.003108
+25        30          890    -0.9466 -0.004466
+26        48          323    -0.9465 -0.003981
+6         97          422    -0.9464 -0.003964
+4         92          264    -0.9459 -0.003480
+22        73          554    -0.9458 -0.003580
+29        18          395    -0.9452 -0.003341
+7         33          180    -0.9450 -0.002752
+1         24          156    -0.9446 -0.003795
+27        13          650    -0.9441 -0.004582
+23        12          534    -0.9416 -0.004490
+28        69           63    -0.9411 -0.004262
+9         11          393    -0.9407 -0.003539
+11        11          241    -0.9398 -0.002957
+14        67           71    -0.9391 -0.002976
+2023-05-12 18:18:41,219 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:23:21,968 - INFO - Loading MNIST dataset
+2023-05-12 18:23:23,872 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:23:25,250 - INFO - {'max_depth': 81, 'n_estimators': 750}
+2023-05-12 18:23:25,251 - INFO - RandomForestClassifier(max_depth=81, n_estimators=750, n_jobs=-1)
+2023-05-12 18:23:25,259 - INFO - 
+   max_depth n_estimators  mean_test  std_test
+2         81          750    -0.9485 -0.002898
+18        69          832    -0.9482 -0.002475
+0         61          910    -0.9480 -0.002988
+17        51          525    -0.9479 -0.004594
+3         30          664    -0.9479 -0.003795
+16        68          560    -0.9477 -0.003902
+12        69          326    -0.9476 -0.003746
+15        98          610    -0.9475 -0.003605
+20        71          612    -0.9473 -0.003609
+5         84          508    -0.9471 -0.005394
+10        39          855    -0.9470 -0.003322
+13        42          509    -0.9470 -0.004214
+21        64          293    -0.9470 -0.003101
+19        71          736    -0.9467 -0.003256
+24        60          696    -0.9467 -0.003565
+8         31          358    -0.9467 -0.003108
+25        30          890    -0.9466 -0.004466
+26        48          323    -0.9465 -0.003981
+6         97          422    -0.9464 -0.003964
+4         92          264    -0.9459 -0.003480
+22        73          554    -0.9458 -0.003580
+29        18          395    -0.9452 -0.003341
+7         33          180    -0.9450 -0.002752
+1         24          156    -0.9446 -0.003795
+27        13          650    -0.9441 -0.004582
+23        12          534    -0.9416 -0.004490
+28        69           63    -0.9411 -0.004262
+9         11          393    -0.9407 -0.003539
+11        11          241    -0.9398 -0.002957
+14        67           71    -0.9391 -0.002976
+2023-05-12 18:23:25,282 - INFO - 
+Doing RandomizedSearchCV for model extra_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:23:25,282 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f6ec2081550>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f6ec19850d0>}
+2023-05-12 18:28:24,392 - INFO - {'max_depth': 39, 'n_estimators': 274}
+2023-05-12 18:28:24,392 - INFO - ExtraTreesClassifier(max_depth=39, n_estimators=274, n_jobs=-1)
+2023-05-12 18:28:24,400 - INFO - 
+   max_depth n_estimators  mean_test  std_test
+19        39          274    -0.9537 -0.002818
+22        29          419    -0.9532 -0.003238
+10        33          393    -0.9531 -0.002616
+14        31          352    -0.9530 -0.001234
+27        27          487    -0.9529 -0.003942
+15        21          444    -0.9527 -0.003567
+23        34          230    -0.9527 -0.002696
+4         35          314    -0.9525 -0.002682
+18        25          370    -0.9525 -0.001720
+29        23          341    -0.9523 -0.002411
+9         30          357    -0.9522 -0.003631
+20        39          150    -0.9522 -0.002193
+28        34          415    -0.9520 -0.002542
+6         30          199    -0.9520 -0.001269
+26        18          266    -0.9516 -0.002965
+0         16          448    -0.9513 -0.003330
+12        37          376    -0.9513 -0.001768
+16        26          158    -0.9511 -0.003406
+1         24          206    -0.9510 -0.002685
+5         20          187    -0.9509 -0.003988
+3         30          202    -0.9508 -0.002648
+7         17          251    -0.9506 -0.003301
+21        21          154    -0.9505 -0.004072
+2         17          288    -0.9504 -0.002866
+17        19          287    -0.9501 -0.002084
+25        16          120    -0.9487 -0.003058
+24        14          406    -0.9477 -0.004450
+8         12          249    -0.9425 -0.003095
+11        11          291    -0.9387 -0.002270
+13        10          413    -0.9314 -0.004138
+2023-05-12 18:28:24,435 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:31:33,592 - INFO - Loading MNIST dataset
+2023-05-12 18:31:34,725 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:31:34,726 - INFO - {'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff8bb7a72d0>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff8bb7a71d0>}
+2023-05-12 18:32:32,734 - INFO - Loading MNIST dataset
+2023-05-12 18:32:33,469 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:32:33,469 - INFO - {'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff88060a210>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff8b9a20b90>}
+2023-05-12 18:34:42,450 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:34:42,450 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:34:42,459 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:34:42,483 - INFO - 
+Doing RandomizedSearchCV for model extra_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:34:42,483 - INFO - {'min_samples_split': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff8805897d0>, 'min_samples_leaf': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7ff88058bb50>}
+2023-05-12 18:36:52,785 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:36:52,786 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:36:52,793 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:36:52,811 - INFO - 
+Doing RandomizedSearchCV for model svm_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:36:52,811 - INFO - {'svc__kernel': ['poly'], 'svc__gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7ff8bb83e450>, 'svc__C': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7ff88038a1d0>}
+2023-05-12 18:39:12,897 - INFO - Loading MNIST dataset
+2023-05-12 18:39:13,595 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:39:13,739 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:39:13,739 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:39:13,746 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:39:13,766 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:39:14,021 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:39:14,021 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:39:14,027 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:39:14,047 - INFO - 
+Doing RandomizedSearchCV for model svm_clf
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 18:39:14,047 - INFO - {'svc__kernel': ['poly'], 'svc__gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7ff8831d7a90>, 'svc__C': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7ff8831d7650>}
+2023-05-12 18:42:01,152 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 18:42:01,152 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 18:42:01,165 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 18:55:49,208 - INFO - Loading MNIST dataset
+2023-05-12 18:55:50,052 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:55:50,286 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:55:50,286 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:55:50,295 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:55:50,333 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:55:50,655 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:55:50,655 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:55:50,662 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:55:50,711 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:55:50,724 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 18:55:50,724 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 18:55:50,736 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 18:56:06,565 - INFO - Loading MNIST dataset
+2023-05-12 18:56:07,373 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:07,581 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:56:07,581 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:56:07,587 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:56:07,623 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:07,954 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:56:07,954 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:56:07,961 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:56:08,015 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:08,030 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 18:56:08,031 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 18:56:08,042 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 18:56:55,471 - INFO - Loading MNIST dataset
+2023-05-12 18:56:56,144 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:56,330 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:56:56,330 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:56:56,338 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:56:56,376 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:56,651 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:56:56,652 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:56:56,657 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:56:56,697 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:56:56,706 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 18:56:56,706 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 18:56:56,717 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 18:56:56,751 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1)),
+                             ('svm',
+                              Pipeline(steps=[('standardscaler',
+                                               StandardScaler()),
+                                              ('svc',
+                                               SVC(C=1, gamma=1, kernel='poly',
+                                                   probability=True))]))],
+                 voting='soft')
+2023-05-12 18:57:26,138 - INFO - Loading MNIST dataset
+2023-05-12 18:57:26,842 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:57:27,026 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:57:27,026 - INFO - 
+RandomForestClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200, n_jobs=-1)
+2023-05-12 18:57:27,034 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.942700 -0.003181
+13                3                 5  -0.938700 -0.002862
+8                 2                 9  -0.938200 -0.004266
+3                 3                 8  -0.936500 -0.005052
+5                 4                 9  -0.934800 -0.004512
+16                5                 4  -0.934300 -0.004172
+10                5                 2  -0.934300 -0.004246
+2                 5                 8  -0.934000 -0.004912
+7                 6                 6  -0.932000 -0.005134
+11                6                 6  -0.931800 -0.004125
+9                 6                 3  -0.930700 -0.004267
+0                 7                 5  -0.929000 -0.002372
+6                 8                 4  -0.928800 -0.004210
+14                7                 5  -0.928600 -0.004071
+17                7                 6  -0.928201 -0.004537
+1                 8                 6  -0.927801 -0.005499
+4                 8                 6  -0.927800 -0.003531
+18                9                 8  -0.926500 -0.004242
+12                9                 2  -0.926101 -0.005142
+15                9                 4  -0.925000 -0.003119
+2023-05-12 18:57:27,067 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:57:27,350 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 18:57:27,350 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 18:57:27,357 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 18:57:27,403 - INFO - Loading RandomizedSearchCV:
+2023-05-12 18:57:27,417 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 18:57:27,417 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 18:57:27,429 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 18:57:27,467 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1)),
+                             ('svm',
+                              Pipeline(steps=[('standardscaler',
+                                               StandardScaler()),
+                                              ('svc',
+                                               SVC(C=1, gamma=1, kernel='poly',
+                                                   probability=True))]))],
+                 voting='soft')
+2023-05-12 19:24:53,245 - INFO - Loading MNIST dataset
+2023-05-12 19:24:54,100 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:24:54,100 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe94667a950>}
+2023-05-12 19:26:22,062 - INFO - {'n_estimators': 320}
+2023-05-12 19:26:22,062 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-12 19:26:22,070 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-12 19:26:22,092 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:26:22,345 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 19:26:22,346 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 19:26:22,351 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 19:26:22,390 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:26:22,400 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 19:26:22,400 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 19:26:22,414 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 19:27:54,942 - INFO - Loading MNIST dataset
+2023-05-12 19:27:56,970 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:27:56,970 - INFO - [{'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe946483410>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe962fd5150>}, {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe944f29010>, 'max_depth': None}]
+2023-05-12 19:28:49,842 - INFO - Loading MNIST dataset
+2023-05-12 19:28:50,652 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:28:50,652 - INFO - [{'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe93fabb090>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe94b8ac390>}, {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe944f21f90>, 'max_depth': None}]
+2023-05-12 19:32:19,445 - INFO - Loading MNIST dataset
+2023-05-12 19:32:20,254 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:32:20,255 - INFO - [{'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe9450c1e90>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe946501f10>}, {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe944ef2b10>, 'max_depth': None}]
+2023-05-12 19:32:32,338 - INFO - Loading MNIST dataset
+2023-05-12 19:32:33,038 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:32:33,038 - INFO - [{'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe945191ed0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe94511dd50>}, {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe93f8f0c10>, 'max_depth': 10}]
+2023-05-12 19:32:43,215 - INFO - Loading MNIST dataset
+2023-05-12 19:32:43,926 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:32:43,926 - INFO - [{'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe93f5fb090>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe945091ad0>}, {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe93f4b6e50>, 'max_depth': None}]
+2023-05-12 19:34:25,605 - INFO - Loading MNIST dataset
+2023-05-12 19:34:26,286 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:34:26,287 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe93f8c2bd0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe944e9d210>}
+2023-05-12 19:36:06,353 - INFO - {'max_depth': 92, 'n_estimators': 264}
+2023-05-12 19:36:06,353 - INFO - RandomForestClassifier(max_depth=92, n_estimators=264, n_jobs=-1)
+2023-05-12 19:36:06,363 - INFO - 
+  max_depth n_estimators  mean_test  std_test
+4        92          264    -0.9483 -0.004128
+7        31          358    -0.9464 -0.002373
+0        61          398    -0.9462 -0.002917
+9        39          343    -0.9456 -0.003325
+2        81          238    -0.9456 -0.001839
+6        33          180    -0.9455 -0.005253
+1        24          156    -0.9453 -0.002838
+3        30          152    -0.9451 -0.003238
+5        84          137    -0.9449 -0.002953
+8        11          393    -0.9410 -0.002459
+2023-05-12 19:36:06,388 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:36:06,630 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 19:36:06,630 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 19:36:06,636 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 19:36:06,670 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:36:06,680 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 19:36:06,680 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 19:36:06,693 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-12 19:36:34,187 - INFO - Loading MNIST dataset
+2023-05-12 19:36:35,020 - INFO - 
+Doing RandomizedSearchCV for model rnd_clf2
+with {subset_train_lemgth} instances 
+and parameter distribution:
+2023-05-12 19:36:35,020 - INFO - {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7fe944f15e90>}
+2023-05-12 19:38:00,045 - INFO - {'n_estimators': 320}
+2023-05-12 19:38:00,045 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-12 19:38:00,051 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-12 19:38:00,067 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:38:00,311 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-12 19:38:00,311 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-12 19:38:00,317 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-12 19:38:00,354 - INFO - Loading RandomizedSearchCV:
+2023-05-12 19:38:00,362 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-12 19:38:00,363 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-12 19:38:00,375 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-22 16:45:02,824 - INFO - Loading MNIST dataset
+2023-05-22 16:45:05,019 - INFO - Loading RandomizedSearchCV:
+2023-05-22 16:45:05,524 - INFO - {'n_estimators': 320}
+2023-05-22 16:45:05,524 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-22 16:45:05,538 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-22 16:45:05,589 - INFO - Loading RandomizedSearchCV:
+2023-05-22 16:45:05,973 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-22 16:45:05,973 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-22 16:45:05,979 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-22 16:45:06,023 - INFO - Loading RandomizedSearchCV:
+2023-05-22 16:45:06,044 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-22 16:45:06,044 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-22 16:45:06,057 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-22 16:45:06,092 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1)),
+                             ('svm',
+                              Pipeline(steps=[('standardscaler',
+                                               StandardScaler()),
+                                              ('svc',
+                                               SVC(C=1, gamma=1, kernel='poly',
+                                                   probability=True))]))],
+                 voting='soft')
+2023-05-22 16:50:10,858 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 16:55:49,854 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 16:56:21,920 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 16:56:53,597 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 16:57:30,220 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 16:57:30,578 - INFO - Accuracy on validation set is 0.0
+2023-05-22 17:01:31,076 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 17:01:31,442 - INFO - Accuracy on validation set is 0.0
+2023-05-22 17:02:11,095 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 17:02:11,448 - INFO - Accuracy on validation set is 0.9501
+2023-05-22 17:02:11,469 - INFO - Precision on validation set is 0.9496127848489886
+2023-05-22 17:02:11,480 - INFO - Recall on validation set is 0.9495965503141551
+2023-05-22 17:02:23,860 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 17:02:24,219 - INFO - Accuracy on validation set is 0.9501
+2023-05-22 17:02:24,233 - INFO - Precision on validation set is 0.9496127848489886
+2023-05-22 17:02:24,243 - INFO - Recall on validation set is 0.9495965503141551
+2023-05-22 17:02:24,255 - INFO - F1 score on validation set is 0.9495715623538976
+2023-05-22 17:02:24,255 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-22 17:02:24,629 - INFO - Accuracy on validation set is 0.9544
+2023-05-22 17:02:24,639 - INFO - Precision on validation set is 0.9539387811693562
+2023-05-22 17:02:24,651 - INFO - Recall on validation set is 0.9539387798979042
+2023-05-22 17:02:24,661 - INFO - F1 score on validation set is 0.9539146138262726
+2023-05-22 17:02:24,661 - INFO - Doing prediction on the validation set for: Pipeline
+2023-05-22 17:02:59,320 - INFO - Accuracy on validation set is 0.9574
+2023-05-22 17:02:59,331 - INFO - Precision on validation set is 0.9574030453894021
+2023-05-22 17:02:59,341 - INFO - Recall on validation set is 0.9568526976784494
+2023-05-22 17:02:59,352 - INFO - F1 score on validation set is 0.9569940740226215
+2023-05-22 17:05:44,495 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-22 17:05:44,899 - INFO - Accuracy on validation set is 0.9501
+2023-05-22 17:05:44,909 - INFO - Precision on validation set is 0.9496127848489886
+2023-05-22 17:05:44,920 - INFO - Recall on validation set is 0.9495965503141551
+2023-05-22 17:05:44,930 - INFO - F1 score on validation set is 0.9495715623538976
+2023-05-22 17:05:44,930 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-22 17:05:45,296 - INFO - Accuracy on validation set is 0.9544
+2023-05-22 17:05:45,306 - INFO - Precision on validation set is 0.9539387811693562
+2023-05-22 17:05:45,316 - INFO - Recall on validation set is 0.9539387798979042
+2023-05-22 17:05:45,326 - INFO - F1 score on validation set is 0.9539146138262726
+2023-05-22 17:05:45,327 - INFO - Doing prediction on the validation set for: Pipeline
+2023-05-22 17:06:19,208 - INFO - Accuracy on validation set is 0.9574
+2023-05-22 17:06:19,218 - INFO - Precision on validation set is 0.9574030453894021
+2023-05-22 17:06:19,228 - INFO - Recall on validation set is 0.9568526976784494
+2023-05-22 17:06:19,238 - INFO - F1 score on validation set is 0.9569940740226215
+2023-05-22 17:06:19,238 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:08:52,320 - INFO - Loading MNIST dataset
+2023-05-24 17:08:53,381 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:08:53,786 - INFO - {'n_estimators': 320}
+2023-05-24 17:08:53,787 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:08:53,798 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:08:53,839 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:08:54,163 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:08:54,164 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:08:54,169 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:08:54,207 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:08:54,228 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:08:54,228 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:08:54,239 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:08:54,273 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1)),
+                             ('svm',
+                              Pipeline(steps=[('standardscaler',
+                                               StandardScaler()),
+                                              ('svc',
+                                               SVC(C=1, gamma=1, kernel='poly',
+                                                   probability=True))]))],
+                 voting='soft')
+2023-05-24 17:09:00,219 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:09:00,421 - INFO - Accuracy on validation set is 0.899
+2023-05-24 17:09:00,432 - INFO - Precision on validation set is 0.898841187624425
+2023-05-24 17:09:00,442 - INFO - Recall on validation set is 0.8972203434276975
+2023-05-24 17:09:00,452 - INFO - F1 score on validation set is 0.8975724567503413
+2023-05-24 17:09:00,453 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:09:00,657 - INFO - Accuracy on validation set is 0.9089
+2023-05-24 17:09:00,667 - INFO - Precision on validation set is 0.9084549019762889
+2023-05-24 17:09:00,677 - INFO - Recall on validation set is 0.9073730023045476
+2023-05-24 17:09:00,686 - INFO - F1 score on validation set is 0.9076745911306598
+2023-05-24 17:09:00,687 - INFO - Doing prediction on the validation set for: Pipeline
+2023-05-24 17:09:04,740 - INFO - Accuracy on validation set is 0.8657
+2023-05-24 17:09:04,749 - INFO - Precision on validation set is 0.8851144483860409
+2023-05-24 17:09:04,759 - INFO - Recall on validation set is 0.8637614502928248
+2023-05-24 17:09:04,769 - INFO - F1 score on validation set is 0.8678684964608424
+2023-05-24 17:09:04,769 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:15:55,426 - INFO - Loading MNIST dataset
+2023-05-24 17:15:56,059 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:15:56,404 - INFO - {'n_estimators': 320}
+2023-05-24 17:15:56,404 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:15:56,411 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:15:56,451 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:15:56,715 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:15:56,715 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:15:56,721 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:15:56,758 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:15:56,767 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:15:56,768 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:15:56,778 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:15:56,812 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1)),
+                             ('svm',
+                              Pipeline(steps=[('standardscaler',
+                                               StandardScaler()),
+                                              ('svc',
+                                               SVC(C=1, gamma=1, kernel='poly',
+                                                   probability=True))]))],
+                 voting='soft')
+2023-05-24 17:16:02,619 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:16:02,716 - INFO - Accuracy on validation set is 0.9
+2023-05-24 17:16:02,719 - INFO - Precision on validation set is 0.8998599292563645
+2023-05-24 17:16:02,722 - INFO - Recall on validation set is 0.8983122745226728
+2023-05-24 17:16:02,725 - INFO - F1 score on validation set is 0.8985346077660745
+2023-05-24 17:16:02,725 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:16:02,814 - INFO - Accuracy on validation set is 0.902
+2023-05-24 17:16:02,817 - INFO - Precision on validation set is 0.9010850084883396
+2023-05-24 17:16:02,819 - INFO - Recall on validation set is 0.899750479310496
+2023-05-24 17:16:02,822 - INFO - F1 score on validation set is 0.9000473552239251
+2023-05-24 17:16:02,822 - INFO - Doing prediction on the validation set for: Pipeline
+2023-05-24 17:16:03,220 - INFO - Accuracy on validation set is 0.858
+2023-05-24 17:16:03,222 - INFO - Precision on validation set is 0.874018879268563
+2023-05-24 17:16:03,225 - INFO - Recall on validation set is 0.8551168786106833
+2023-05-24 17:16:03,227 - INFO - F1 score on validation set is 0.8571700704990738
+2023-05-24 17:16:03,227 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:18:01,978 - INFO - Loading MNIST dataset
+2023-05-24 17:18:02,574 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:18:02,889 - INFO - {'n_estimators': 320}
+2023-05-24 17:18:02,889 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:18:02,896 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:18:02,931 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:18:03,160 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:18:03,161 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:18:03,166 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:18:03,202 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:18:03,212 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:18:03,212 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:18:03,223 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:18:03,250 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:18:10,885 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:18:11,105 - INFO - Accuracy on validation set is 0.9501
+2023-05-24 17:18:11,116 - INFO - Precision on validation set is 0.9496127848489886
+2023-05-24 17:18:11,127 - INFO - Recall on validation set is 0.9495965503141551
+2023-05-24 17:18:11,137 - INFO - F1 score on validation set is 0.9495715623538976
+2023-05-24 17:18:11,137 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:18:11,376 - INFO - Accuracy on validation set is 0.9544
+2023-05-24 17:18:11,386 - INFO - Precision on validation set is 0.9539387811693562
+2023-05-24 17:18:11,396 - INFO - Recall on validation set is 0.9539387798979042
+2023-05-24 17:18:11,406 - INFO - F1 score on validation set is 0.9539146138262726
+2023-05-24 17:18:11,406 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:19:22,068 - INFO - Loading MNIST dataset
+2023-05-24 17:19:22,669 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:19:23,008 - INFO - {'n_estimators': 320}
+2023-05-24 17:19:23,008 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:19:23,015 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:19:23,055 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:19:23,299 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:19:23,299 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:19:23,305 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:19:23,341 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:19:23,350 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:19:23,350 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:19:23,361 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:19:23,386 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:19:31,164 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:19:31,386 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:19:31,388 - INFO - Accuracy on validation set is 0.9501
+2023-05-24 17:19:31,399 - INFO - Precision on validation set is 0.9496127848489886
+2023-05-24 17:19:31,409 - INFO - Recall on validation set is 0.9495965503141551
+2023-05-24 17:19:31,419 - INFO - F1 score on validation set is 0.9495715623538976
+2023-05-24 17:19:31,419 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:19:31,650 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:19:31,652 - INFO - Accuracy on validation set is 0.9544
+2023-05-24 17:19:31,662 - INFO - Precision on validation set is 0.9539387811693562
+2023-05-24 17:19:31,672 - INFO - Recall on validation set is 0.9539387798979042
+2023-05-24 17:19:31,682 - INFO - F1 score on validation set is 0.9539146138262726
+2023-05-24 17:19:31,682 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:25:14,454 - INFO - Loading MNIST dataset
+2023-05-24 17:25:15,060 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:15,392 - INFO - {'n_estimators': 320}
+2023-05-24 17:25:15,393 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:25:15,400 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:25:15,431 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:15,637 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:25:15,638 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:25:15,643 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:25:15,673 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:15,681 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:25:15,681 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:25:15,692 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:25:15,718 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:25:23,618 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:25:23,664 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:25:35,079 - INFO - Loading MNIST dataset
+2023-05-24 17:25:35,685 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:35,987 - INFO - {'n_estimators': 320}
+2023-05-24 17:25:35,988 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:25:35,994 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:25:36,024 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:36,237 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:25:36,237 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:25:36,242 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:25:36,272 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:36,281 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:25:36,281 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:25:36,292 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:25:36,319 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:25:41,932 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:25:41,997 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:25:55,930 - INFO - Loading MNIST dataset
+2023-05-24 17:25:56,537 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:56,828 - INFO - {'n_estimators': 320}
+2023-05-24 17:25:56,829 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:25:56,834 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:25:56,864 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:57,074 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:25:57,075 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:25:57,080 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:25:57,110 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:25:57,119 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:25:57,119 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:25:57,130 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:25:57,156 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:26:02,766 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:26:02,857 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:26:44,254 - INFO - Loading MNIST dataset
+2023-05-24 17:26:44,848 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:26:45,127 - INFO - {'n_estimators': 320}
+2023-05-24 17:26:45,128 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:26:45,133 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:26:45,162 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:26:45,369 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:26:45,369 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:26:45,375 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:26:45,404 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:26:45,412 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:26:45,412 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:26:45,423 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:26:45,449 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:26:51,039 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:26:51,079 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:27:33,144 - INFO - Loading MNIST dataset
+2023-05-24 17:27:33,740 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:27:34,020 - INFO - {'n_estimators': 320}
+2023-05-24 17:27:34,021 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:27:34,026 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:27:34,055 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:27:34,266 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:27:34,266 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:27:34,272 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:27:34,301 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:27:34,309 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:27:34,310 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:27:34,320 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:27:34,346 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))],
+                 voting='soft')
+2023-05-24 17:27:40,017 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:27:40,057 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:27:40,058 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:27:40,061 - INFO - Precision on validation set is 1.0
+2023-05-24 17:27:40,063 - INFO - Recall on validation set is 1.0
+2023-05-24 17:27:40,065 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:27:40,065 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:27:40,106 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:27:40,107 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:27:40,110 - INFO - Precision on validation set is 1.0
+2023-05-24 17:27:40,113 - INFO - Recall on validation set is 1.0
+2023-05-24 17:27:40,116 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:27:40,116 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:34:40,872 - INFO - Loading MNIST dataset
+2023-05-24 17:34:41,490 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:34:41,783 - INFO - {'n_estimators': 320}
+2023-05-24 17:34:41,783 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:34:41,789 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:34:41,821 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:34:42,037 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:34:42,037 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:34:42,042 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:34:42,074 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:34:42,082 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:34:42,083 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:34:42,094 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:34:42,121 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('rnd',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))])
+2023-05-24 17:34:50,239 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:34:50,280 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:34:50,281 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:34:50,284 - INFO - Precision on validation set is 1.0
+2023-05-24 17:34:50,286 - INFO - Recall on validation set is 1.0
+2023-05-24 17:34:50,288 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:34:50,288 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:34:50,327 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:34:50,328 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:34:50,331 - INFO - Precision on validation set is 1.0
+2023-05-24 17:34:50,333 - INFO - Recall on validation set is 1.0
+2023-05-24 17:34:50,335 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:34:50,335 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:42:22,336 - INFO - Loading MNIST dataset
+2023-05-24 17:42:23,107 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:42:23,443 - INFO - {'n_estimators': 320}
+2023-05-24 17:42:23,443 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:42:23,449 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:42:23,481 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:42:23,695 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:42:23,695 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:42:23,700 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:42:23,731 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:42:23,740 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:42:23,740 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:42:23,751 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:42:23,778 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('random_forest_clf',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra_trees_clf',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))])
+2023-05-24 17:42:31,862 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:42:31,904 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:42:31,905 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:42:31,908 - INFO - Precision on validation set is 1.0
+2023-05-24 17:42:31,910 - INFO - Recall on validation set is 1.0
+2023-05-24 17:42:31,912 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:42:31,912 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:42:31,954 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:42:31,955 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:42:31,958 - INFO - Precision on validation set is 1.0
+2023-05-24 17:42:31,960 - INFO - Recall on validation set is 1.0
+2023-05-24 17:42:31,962 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:42:31,962 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:49:22,909 - INFO - Loading MNIST dataset
+2023-05-24 17:49:23,504 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:49:23,795 - INFO - {'n_estimators': 320}
+2023-05-24 17:49:23,795 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:49:23,801 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:49:23,832 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:49:24,050 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:49:24,050 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:49:24,055 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:49:24,086 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:49:24,094 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:49:24,094 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:49:24,105 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:49:24,131 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('random_forest_clf',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra_trees_clf',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))])
+2023-05-24 17:58:36,426 - INFO - Loading MNIST dataset
+2023-05-24 17:58:37,021 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:58:37,320 - INFO - {'n_estimators': 320}
+2023-05-24 17:58:37,320 - INFO - RandomForestClassifier(n_estimators=320, n_jobs=-1)
+2023-05-24 17:58:37,326 - INFO - 
+  n_estimators  mean_test  std_test
+3          320    -0.9468 -0.002639
+2          398    -0.9464 -0.002328
+6          238    -0.9460 -0.003390
+9          171    -0.9459 -0.002943
+4          156    -0.9456 -0.004748
+5          121    -0.9455 -0.003327
+1          485    -0.9451 -0.004044
+8          152    -0.9448 -0.003468
+0          152    -0.9440 -0.004383
+7           70    -0.9397 -0.002169
+2023-05-24 17:58:37,356 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:58:37,565 - INFO - {'min_samples_leaf': 2, 'min_samples_split': 5}
+2023-05-24 17:58:37,565 - INFO - 
+ExtraTreesClassifier(max_depth=30, min_samples_leaf=2, min_samples_split=5,
+                     n_estimators=200, n_jobs=-1)
+2023-05-24 17:58:37,571 - INFO - 
+   min_samples_leaf min_samples_split  mean_test  std_test
+19                2                 5  -0.944800 -0.002590
+8                 2                 9  -0.943300 -0.002823
+13                3                 5  -0.943100 -0.004214
+3                 3                 8  -0.941100 -0.003099
+5                 4                 9  -0.939600 -0.005421
+10                5                 2  -0.936300 -0.003180
+16                5                 4  -0.936000 -0.004057
+2                 5                 8  -0.934800 -0.003075
+9                 6                 3  -0.934501 -0.005026
+7                 6                 6  -0.933200 -0.004183
+11                6                 6  -0.931600 -0.004668
+14                7                 5  -0.931100 -0.002547
+0                 7                 5  -0.930200 -0.003838
+17                7                 6  -0.930100 -0.002818
+4                 8                 6  -0.929301 -0.003950
+1                 8                 6  -0.929000 -0.004386
+6                 8                 4  -0.927700 -0.004083
+12                9                 2  -0.927000 -0.002636
+18                9                 8  -0.925000 -0.002551
+15                9                 4  -0.925000 -0.004352
+2023-05-24 17:58:37,601 - INFO - Loading RandomizedSearchCV:
+2023-05-24 17:58:37,609 - INFO - {'svc__C': 0.5611516415334504, 'svc__gamma': 0.7969454818643928, 'svc__kernel': 'poly'}
+2023-05-24 17:58:37,610 - INFO - 
+Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=0.5611516415334504, gamma=0.7969454818643928,
+                     kernel='poly'))])
+2023-05-24 17:58:37,620 - INFO - 
+      svc__C svc__gamma svc__kernel  mean_test  std_test
+0   0.561152   0.796945        poly  -0.878501 -0.003184
+27   1.56964   0.697828        poly  -0.878501 -0.003184
+26  7.568292   0.616105        poly  -0.878501 -0.003184
+25  8.692992    0.35503        poly  -0.878501 -0.003184
+24  1.239997   0.023427        poly  -0.878501 -0.003184
+23  0.420167   0.109682        poly  -0.878501 -0.003184
+22  0.329276   0.211371        poly  -0.878501 -0.003184
+21  0.117159   0.658629        poly  -0.878501 -0.003184
+20  0.175419   0.097803        poly  -0.878501 -0.003184
+19  2.335964   0.075911        poly  -0.878501 -0.003184
+18  0.406656    0.01568        poly  -0.878501 -0.003184
+17   8.53619   0.413804        poly  -0.878501 -0.003184
+16  0.134928   0.790262        poly  -0.878501 -0.003184
+15  1.640929    0.02193        poly  -0.878501 -0.003184
+14  1.530485   0.012385        poly  -0.878501 -0.003184
+13  0.250812   0.106775        poly  -0.878501 -0.003184
+12  0.816846   0.371836        poly  -0.878501 -0.003184
+11  0.383963   0.054041        poly  -0.878501 -0.003184
+10  1.673809    0.01901        poly  -0.878501 -0.003184
+9   0.730954   0.038235        poly  -0.878501 -0.003184
+8   0.405961   0.112076        poly  -0.878501 -0.003184
+7    0.23102   0.023271        poly  -0.878501 -0.003184
+6   4.622589   0.026588        poly  -0.878501 -0.003184
+5   0.109943   0.870602        poly  -0.878501 -0.003184
+4   1.593052   0.260702        poly  -0.878501 -0.003184
+3   0.130667   0.539948        poly  -0.878501 -0.003184
+2   0.205134   0.020511        poly  -0.878501 -0.003184
+1   2.910636   0.157513        poly  -0.878501 -0.003184
+28  0.150309   0.024658        poly  -0.878501 -0.003184
+29  0.123156   0.044736        poly  -0.878501 -0.003184
+2023-05-24 17:58:37,646 - INFO - 
+Training a Voting classifier with
+VotingClassifier(estimators=[('random_forest_clf',
+                              RandomForestClassifier(max_depth=30,
+                                                     n_estimators=200,
+                                                     n_jobs=-1)),
+                             ('extra_trees_clf',
+                              ExtraTreesClassifier(max_depth=30,
+                                                   n_estimators=200,
+                                                   n_jobs=-1))])
+2023-05-24 17:58:45,484 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 17:58:45,527 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:58:45,528 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:58:45,531 - INFO - Precision on validation set is 1.0
+2023-05-24 17:58:45,534 - INFO - Recall on validation set is 1.0
+2023-05-24 17:58:45,536 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:58:45,536 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 17:58:45,579 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:58:45,580 - INFO - Accuracy on validation set is 1.0
+2023-05-24 17:58:45,583 - INFO - Precision on validation set is 1.0
+2023-05-24 17:58:45,585 - INFO - Recall on validation set is 1.0
+2023-05-24 17:58:45,587 - INFO - F1 score on validation set is 1.0
+2023-05-24 17:58:45,588 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 17:58:45,666 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 17:58:45,667 - INFO - Accuracy on validation set is 0.0
+2023-05-24 18:00:17,529 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 18:00:17,569 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:17,570 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:00:17,572 - INFO - Precision on validation set is 1.0
+2023-05-24 18:00:17,575 - INFO - Recall on validation set is 1.0
+2023-05-24 18:00:17,577 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:00:17,577 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 18:00:17,615 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:17,616 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:00:17,618 - INFO - Precision on validation set is 1.0
+2023-05-24 18:00:17,620 - INFO - Recall on validation set is 1.0
+2023-05-24 18:00:17,622 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:00:17,622 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 18:00:17,700 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:17,701 - INFO - Accuracy on validation set is 0.0
+2023-05-24 18:00:45,795 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 18:00:45,834 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:45,835 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:00:45,838 - INFO - Precision on validation set is 1.0
+2023-05-24 18:00:45,841 - INFO - Recall on validation set is 1.0
+2023-05-24 18:00:45,843 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:00:45,843 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 18:00:45,881 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:45,882 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:00:45,885 - INFO - Precision on validation set is 1.0
+2023-05-24 18:00:45,887 - INFO - Recall on validation set is 1.0
+2023-05-24 18:00:45,889 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:00:45,889 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 18:00:45,966 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:00:45,967 - INFO - Accuracy on validation set is 0.0
+2023-05-24 18:01:53,956 - INFO - Doing prediction on the validation set for: RandomForestClassifier
+2023-05-24 18:01:53,998 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:01:53,999 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:01:54,002 - INFO - Precision on validation set is 1.0
+2023-05-24 18:01:54,004 - INFO - Recall on validation set is 1.0
+2023-05-24 18:01:54,006 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:01:54,006 - INFO - Doing prediction on the validation set for: ExtraTreesClassifier
+2023-05-24 18:01:54,045 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:01:54,046 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:01:54,049 - INFO - Precision on validation set is 1.0
+2023-05-24 18:01:54,051 - INFO - Recall on validation set is 1.0
+2023-05-24 18:01:54,053 - INFO - F1 score on validation set is 1.0
+2023-05-24 18:01:54,053 - INFO - Doing prediction on the validation set for: VotingClassifier
+2023-05-24 18:01:54,130 - INFO - Measuring accuracy, precision, recall and f1 score
+2023-05-24 18:01:54,131 - INFO - Accuracy on validation set is 1.0
+2023-05-24 18:01:54,133 - INFO - Precision on validation set is 1.0
+2023-05-24 18:01:54,135 - INFO - Recall on validation set is 1.0
+2023-05-24 18:01:54,137 - INFO - F1 score on validation set is 1.0
