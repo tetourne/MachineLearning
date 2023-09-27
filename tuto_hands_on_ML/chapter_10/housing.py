@@ -5,6 +5,7 @@ import pandas as pd
 import logging
 import joblib
 from pathlib import Path
+from matplotlib import pyplot as plt
 
 from MachineLearning import functions as fn
 import tensorflow as tf
@@ -53,7 +54,7 @@ acti_outputs = None
 ########## Define Model ##########
 model = keras.models.Sequential([
     keras.layers.Dense(n_hidden1, activation=acti_hidden1, input_shape=input_shape),
-    # keras.layers.Dense(n_hidden2, activation=acti_hidden2),
+    # keras.layers.Dense(n_hidden2, activation=acti_hidden2),  # two layers are overfitting data
     keras.layers.Dense(n_outputs, activation=acti_outputs)
 ])
 
@@ -88,4 +89,15 @@ if do_plots:
     plt.gca().set_ylim(0, 1)
     fn.save_fig("keras_learning_curves_plot")
     plt.show()
+
+
+########## Test model ##########
+logger.info(model.evaluate(X_test, y_test))
+
+# predictions
+X_new = X_test[:3]
+y_proba = model.predict(X_new)
+logger.info(y_proba.round(2))
+y_pred = np.argmax(model.predict(X_new), axis=-1)
+logger.info(y_pred)
 

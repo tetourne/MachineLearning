@@ -8,3 +8,25 @@
 2023-09-27 18:25:42,821 - INFO - None
 2023-09-27 18:27:13,941 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa4d6fe5d90>, <keras.src.layers.core.dense.Dense object at 0x7fa4d9812390>]
 2023-09-27 18:27:13,942 - INFO - None
+2023-09-27 18:54:48,463 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa4c81b5190>, <keras.src.layers.core.dense.Dense object at 0x7fa4d9544ad0>]
+2023-09-27 18:54:48,464 - INFO - None
+2023-09-27 18:54:48,548 - INFO - Training model:
+2023-09-27 18:55:14,932 - INFO - Training done.
+2023-09-27 18:56:10,646 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa51bf43350>, <keras.src.layers.core.dense.Dense object at 0x7fa4d0798090>]
+2023-09-27 18:56:10,647 - INFO - None
+2023-09-27 18:56:10,731 - INFO - Training model:
+2023-09-27 18:56:37,104 - INFO - Training done.
+2023-09-27 18:57:56,901 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa45aa4bc10>, <keras.src.layers.core.dense.Dense object at 0x7fa45bf219d0>, <keras.src.layers.core.dense.Dense object at 0x7fa4600075d0>]
+2023-09-27 18:57:56,902 - INFO - None
+2023-09-27 18:57:56,986 - INFO - Training model:
+2023-09-27 18:58:24,710 - INFO - Training done.
+2023-09-27 18:59:07,880 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa45ac36dd0>, <keras.src.layers.core.dense.Dense object at 0x7fa4a82707d0>]
+2023-09-27 18:59:07,881 - INFO - None
+2023-09-27 18:59:07,964 - INFO - Training model:
+2023-09-27 18:59:34,618 - INFO - Training done.
+2023-09-27 18:59:53,968 - INFO - 0.40962958335876465
+2023-09-27 18:59:54,149 - INFO - 
+[[0.44]
+ [1.84]
+ [3.33]]
+2023-09-27 18:59:54,230 - INFO - [0 0 0]

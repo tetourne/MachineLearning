@@ -5,6 +5,7 @@ import pandas as pd
 import logging
 import joblib
 from pathlib import Path
+from matplotlib import pyplot as plt
 
 from MachineLearning import functions as fn
 import tensorflow as tf
