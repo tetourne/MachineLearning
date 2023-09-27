@@ -8,6 +8,7 @@ from sklearn.datasets import fetch_openml
 from zlib import crc32
 from pathlib import Path
 from matplotlib import pyplot as plt
+import seaborn as sns
 import matplotlib.patches as patches
 import pandas as pd
 import numpy as np
@@ -74,6 +75,35 @@ def my_logger(filename, logger_level=logging.DEBUG, console_level=logging.DEBUG,
 
 # Import the logger from the main module
 logger = logging.getLogger(__name__)
+
+
+########## Utils ##########
+def normalizer(df):
+    """
+    Return the normalized dataframe
+
+    :param df: The pandas dataframe to normalize
+    :type df: pd.DataFrame
+    :return: The normalized poandas DataFrame
+    :rtype: pd.DataFrame
+    """
+    norm = (df - df.max()) / (df.max() - df.min()) + 1
+    return norm
+
+
+continent_mapping = {
+    'Africa': ['Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cameroon', 'Central African Republic', 'Chad', 'Comoros', 'Congo', 'Côte d\'Ivoire', 'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Lesotho', 'Liberia', 'Libya', 'Madagascar', 'Malawi', 'Mali', 'Mauritania', 'Mauritius', 'Morocco', 'Mozambique', 'Namibia', 'Niger', 'Nigeria', 'Rwanda', 'São Tomé and Príncipe', 'Senegal', 'Seychelles', 'Sierra Leone', 'Somalia', 'South Africa', 'South Sudan', 'Sudan', 'Tanzania', 'Togo', 'Tunisia', 'Uganda', 'Zambia', 'Zimbabwe'],
+    'Asia': ['Afghanistan', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Bhutan', 'Brunei', 'Cambodia', 'China', 'Cyprus', 'Georgia', 'India', 'Indonesia', 'Iran', 'Iraq', 'Israel', 'Japan', 'Jordan', 'Kazakhstan', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Lebanon', 'Malaysia', 'Maldives', 'Mongolia', 'Myanmar', 'Nepal', 'North Korea', 'Oman', 'Pakistan', 'Palestine', 'Philippines', 'Qatar', 'Russia', 'Saudi Arabia', 'Singapore', 'South Korea', 'Sri Lanka', 'Syria', 'Taiwan', 'Tajikistan', 'Thailand', 'Timor-Leste', 'Turkey', 'Turkmenistan', 'United Arab Emirates', 'Uzbekistan', 'Vietnam', 'Yemen'],
+    'Europe': ['Albania', 'Andorra', 'Austria', 'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Malta', 'Moldova', 'Monaco', 'Montenegro', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Ukraine', 'United Kingdom', 'Vatican City'],
+    'North America': ['Antigua and Barbuda', 'Bahamas', 'Barbados', 'Belize', 'Canada', 'Costa Rica', 'Cuba', 'Dominica', 'Dominican Republic', 'El Salvador', 'Grenada', 'Guatemala', 'Haiti', 'Honduras', 'Jamaica', 'Mexico', 'Nicaragua', 'Panama', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Trinidad and Tobago', 'United States'],
+    'Oceania': ['Australia', 'Fiji', 'Kiribati', 'Marshall Islands', 'Micronesia', 'Nauru', 'New Zealand', 'Palau', 'Papua New Guinea', 'Samoa', 'Solomon Islands', 'Tonga', 'Tuvalu', 'Vanuatu'],
+    'South America': ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela']
+}
+def assign_continent(country):
+    for continent, countries in continent_mapping.items():
+        if country in countries:
+            return continent
+    return None
 
 
 ########## Reading data ##########
@@ -510,3 +540,46 @@ def plot_roc_curve(fpr, tpr, thresholds, threshold=3000, last_curve=True):
         plt.legend(loc="lower right", fontsize=13)
         save_fig("roc_curve_plot")
         plt.show()
+
+
+def plot_correlation_matrix(dataframe, method='pearson', figsize=(15, 10), cmap='coolwarm', title='Correlation Matrix', fig_name='corr_matrices', display_corr=True, show_plot=True):
+    """
+    Plot a correlation matrix for a given DataFrame.
+    :param dataframe: The DataFrame containing the data.
+    :type dataframe: pd.DataFrame
+    :param method: The correlation method to be used ('pearson', 'kendall', or 'spearman'). Default to 'pearson'.
+    :type method: str
+    :param figsize: The size of the plot (width, height) in inches. Default to (10,8).
+    :type figsize: tuple
+    :param cmap: The colormap to be used for the plot. Default to 'coolwarm'.
+    :type cmap: str
+    :param title: The title of the plot. Default to 'Correlation Matrix'.
+    :type title: str
+    :param fig_name: Name of figure to save. Default to 'corr_matrices'.
+    :type fig_name: str
+    :param display_corr: If true, display the correlation value in each cell. Default to True.
+    :type display_corr: bool
+    :param show_plot: If true, use plt.show(). Default to True.
+    :type show_plot: bool
+
+    """
+    # Calculate the correlation matrix
+    logger.info("Computing correlations for all data series...")
+    corr_matrix = dataframe.corr(method=method)
+    # Generate a mask for the upper triangle
+    mask = np.triu(np.ones_like(corr_matrix, dtype=bool))
+    # Set up the matplotlib figure
+    plt.figure(figsize=figsize)
+    # Create a custom diverging colormap
+    cmap = sns.diverging_palette(220, 10, as_cmap=True)
+    # Draw the heatmap with the mask and correct aspect ratio
+    if display_corr:
+        sns.heatmap(corr_matrix, mask=mask, cmap=cmap, center=0, linewidths=.5, annot=True, fmt=".2f", square=True)
+    else:
+        sns.heatmap(corr_matrix, mask=mask, cmap=cmap, center=0, linewidths=.5, square=True)
+    # Set the title of the plot
+    plt.title(title)
+    # Show the plot
+    save_fig(fig_name)
+    if show_plot:
+        plt.show()   

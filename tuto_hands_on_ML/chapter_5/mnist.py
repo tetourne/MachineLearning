@@ -23,7 +23,7 @@ do_rnd_search = False
 logs_path = Path(__file__).parents[0] / "logs"
 if not logs_path.is_dir():
     logs_path.mkdir(parents=True, exist_ok=True)
-logs_file = logs_path / 'mnist.log'
+logs_file = logs_path / sys.argv[0].replace('.py', '.log')
 logger = fn.my_logger(logs_file)
 
 
