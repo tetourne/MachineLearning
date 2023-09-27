@@ -1,0 +1,10 @@
+2023-09-27 16:20:07,764 - INFO - Defining model with
+2023-09-27 16:20:07,765 - INFO - input shape: [28, 28] ; n_hidden1: 300 ;n_hidden2: 100 ; n_outputs: 10
+2023-09-27 18:24:20,230 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa1990e6b50>, <keras.src.layers.core.dense.Dense object at 0x7fa198d01890>]
+2023-09-27 18:24:20,231 - INFO - None
+2023-09-27 18:25:24,098 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa17df3f2d0>, <keras.src.layers.core.dense.Dense object at 0x7fa198d717d0>]
+2023-09-27 18:25:24,099 - INFO - None
+2023-09-27 18:25:42,819 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fea7f93b950>, <keras.src.layers.core.dense.Dense object at 0x7fea82da68d0>]
+2023-09-27 18:25:42,821 - INFO - None
+2023-09-27 18:27:13,941 - INFO - [<keras.src.layers.core.dense.Dense object at 0x7fa4d6fe5d90>, <keras.src.layers.core.dense.Dense object at 0x7fa4d9812390>]
+2023-09-27 18:27:13,942 - INFO - None
